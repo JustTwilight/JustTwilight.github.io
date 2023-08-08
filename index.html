@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="/CSS/normalize.css">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <script src="/JS/cards.js"></script>
+    <link rel="stylesheet" href="/JS/splide-4.1.3/dist/css/splide.min.css">
+    <script src="/JS/splide-4.1.3/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <title>Grupo-CORSEC</title>
+</head>
+
+<body id="body">
+
+    <header>
+
+        <div class="contenedor">
+
+            <div class="box-logo">
+                <a href="/index.php"><img src="/Imagenes/Logotipo_2023.webp"></a>
+            </div>
+
+            <div class="cambio-idioma">
+                <span class="en">Español</span>
+                <input type="checkbox" class="check">
+                <span class="es">Ingles</span>
+            </div>
+
+            <div class="abrir-menu" id="abrir"><button>Abrir</button></div>
+
+            <div class="nav-principal" id="navegacion">
+
+                <button class="cerrar-menu" id="cerrar">Cerrar</button>
+
+                <div class="box-buscador">
+
+                    <form class="buscador">
+                        <div class="input-box">
+                            <div class="input-contenedor" id="ctn-bars-search">
+                                <input type="text" name="search" class="input-text1" placeholder="&#128269" id="inputsearch" autocomplete="off">
+                                <input type="submit" class="boton" value="Buscar">
+                            </div>
+                            <ul id="box-search">
+                                <li><a href="#"><i></i>Distintivos</a></li>
+                                <li><a href="#tendencias"><i></i>Tendencias</a></li>
+                                <li><a href="#"><i></i>Sectores especializados</a></li>
+                                <li><a href="#"><i></i>Excelencia</a></li>
+                                <li><a href="#"><i></i>ESG</a></li>
+                                <li><a href="#"><i></i>Servicios</a></li>
+                                <li><a href="#"><i></i>Contacto</a></li>
+                                <li><a href="/servicios.html#incrementar-ventas"><i></i>Incrementar ventas</a></li>
+                            </ul>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="box-nav">
+
+                    <nav class="nav">
+
+                        <a href="/index.html">INICIO</a>
+
+                        <a href="/servicios.html">SERVICIOS</a>
+
+                        <a href="/formacion.html">FORMACIÓN</a>
+
+                        <a href="/nosotros.html">NOSOTROS</a>
+
+                        <a href="/contacto.html">CONTACTO</a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <script src="/JS/menu.js"></script>
+    <script src="/JS/hamburguesa.js"></script>
+    <script src="/JS/idiomas/idioma.js"></script>
+    <script src="/JS/busqueda.js"></script>
+
+    <main class="contenedor-principal">
+
+        <div class="box-video">
+
+            <img class="video" src="/Imagenes/Cuadro.png" width="100%" height="720px">
+
+        </div>
+
+        <div class="box-distintivos">
+
+            <div class="grid-distintivos">
+
+                <div class="distintivos">
+
+                    <div class="division">
+
+                        <div class="card js-toggle">
+
+                            <img class="distintivo" src="/Imagenes/Inicio/Responsabilidad-social-corporativa.webp" onclick="toggleCardContent()">
+
+                            <div class="card-content" onclick="toggleCardContent()">
+                                <p class="card-description">Certificaciones/Distintivos/Modelos de Implementación/Estrategias de Comunicación.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Responsabilidad Social Corporativa</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+
+                </div>
+
+                <div class="distintivos">
+
+                    <div class="division">
+
+                        <div class="card js-toggle2">
+
+                            <img class="distintivo" src="/Imagenes/Inicio/ESR.webp" onclick="toggleCardContent2()">
+
+                            <div class="card-content" onclick="toggleCardContent2()">
+                                <p class="card-description">Gestión del nuevo modelo establecido por el CEMEFI.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Distintivo ESR</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="distintivos">
+
+                    <div class="division">
+
+                        <div class="card js-toggle3">
+
+                            <img class="distintivo" src="/Imagenes/Inicio/ESG.webp" onclick="toggleCardContent3()">
+
+                            <div class="card-content" onclick="toggleCardContent3()">
+                                <p class="card-description">Criterios/Materialidad/Taxonomía Sostenible para México.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">ESG</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="distintivos">
+
+                    <div class="division">
+
+                        <div class="card js-toggle4">
+
+                            <img class="distintivo" src="/Imagenes/Inicio/Sistemas-de-Gestion.webp" onclick="toggleCardContent4()">
+
+                            <div class="card-content" onclick="toggleCardContent4()">
+                                <p class="card-description">Normas ISO/Gestión y reingeniería de procesos/Premio a la Excelencia Empresarial de México.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Sistemas de gestión</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="distintivos">
+
+                    <div class="division">
+
+                        <div class="card js-toggle5">
+
+                            <img class="distintivo" src="/Imagenes/Inicio/compliance.webp" onclick="toggleCardContent5()">
+
+                            <div class="card-content" onclick="toggleCardContent5()">
+                                <p class="card-description">Cumplimientos regulatorios/NOMS/NMX/ Gobierno Corporativo.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Compliance</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="distintivos">
+
+                    <div class="division">
+
+                        <div class="card js-toggle6">
+
+                            <img class="distintivo" src="/Imagenes/Inicio/Riesgo-control-interno.webp" onclick="toggleCardContent6()">
+
+                            <div class="card-content" onclick="toggleCardContent6()">
+                                <p class="card-description">COSO/ISO/Control y administración del riesgo.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Riesgos y control Interno</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="distintivos">
+
+                    <div class="division">
+
+                        <div class="card js-toggle7">
+
+                            <img class="distintivo" src="/Imagenes/Inicio/Servicios-corporativos.webp" onclick="toggleCardContent7()">
+
+                            <div class="card-content" onclick="toggleCardContent7()">
+                                <p class="card-description">Auditoría Fiscal/Asesoría Legal-Laboral.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Servicios Corporativos</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="distintivos">
+
+                    <div class="division">
+
+                        <div class="card js-toggle8">
+
+                            <img class="distintivo" src="/Imagenes/Inicio/Comercio-exterior.webp" onclick="toggleCardContent8()">
+
+                            <div class="card-content" onclick="toggleCardContent8()">
+                                <p class="card-description">Importación/Exportación/Logística.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Comercio Exterior</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="titulo" id="tendencias">
+
+            <h1>TENDENCIAS</h1>
+
+        </div>
+
+        <div class="linkedin">
+
+            <iframe src='https://widgets.sociablekit.com/linkedin-page-posts/iframe/175624' frameborder='0' width='100%' height='800'></iframe>
+
+        </div>
+
+        <div class="wordpress">
+            <iframe src="https://grupocorsec.wordpress.com/"></iframe>
+        </div>
+
+        <div class="titulo">
+
+            <h1>PRESENCIA</h1>
+
+        </div>
+
+        <div class="box-presencia">
+
+            <img src="/Imagenes/Inicio/Presencia.jpeg" alt="">
+
+        </div>
+
+        <div class="titulo">
+
+            <h1>SECTORES ESPECIALIZADOS</h1>
+
+        </div>
+
+        <div class="box-sectores">
+
+            <div class="grid-sectores">
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/Minero-blanco.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Minero</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/sistema-financiero.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Sistema financiero</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/Transporte-blanco.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Transporte</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/Transporte-industria-vertical-blanco.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Industria de Transporte vertical</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/Gases-nobles-y-Lp-blanco.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Gases nobles y LP</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/Cadenas-retail-blanco.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Cadenas retail</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/Sector-de-la-construccion-blanco.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Sector de la Construcción</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/Tecnologia-blanco.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Tecnología</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/Telecomunicaciones-blanco.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Telecomunicaciones</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/Operadores-y-grupos-logisticos-blanco.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Operadores y Grupos logísticos</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/Puertos-blanco.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Puertos</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+                <div class="sectores">
+
+                    <div class="division">
+
+                        <div class="card">
+
+                            <img class="sector" src="/Imagenes/Inicio/Manufactura-blanco.webp">
+
+                        </div>
+
+                        <center>
+                            <div class="cont-info">
+                                <p class="nombre">Manufactura</p>
+                            </div>
+                        </center>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box-video video-2">
+
+            <img class="video" src="/Imagenes/Cuadro.png" width="100%" height="720px">
+
+        </div>
+
+        <div class="titulo">
+
+            <h1>EXCELENCIA</h1>
+
+        </div>
+
+        <div class="box-excelencia">
+
+            <div class="grid-excelencia">
+
+                <div class="excelencia color1">
+
+                    <h3>Titulo 1</h3>
+
+                    <div class="l-excelencia">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                    <div class="descripcion">
+
+                        <p>Medalla 1</p>
+
+                    </div>
+
+                    <h3>Titulo 2</h3>
+
+                    <div class="l-excelencia">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                    <div class="descripcion">
+
+                        <p>Medalla 2</p>
+
+                    </div>
+
+                </div>
+
+                <div class="excelencia color2">
+
+                    <h3>Titulo 1</h3>
+
+                    <div class="l-excelencia">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                    <div class="descripcion">
+
+                        <p>Medalla 1</p>
+
+                    </div>
+
+                    <h3>Titulo 2</h3>
+
+                    <div class="l-excelencia">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                    <div class="descripcion">
+
+                        <p>Medalla 2</p>
+
+                    </div>
+
+                </div>
+
+                <div class="excelencia color1">
+
+                    <h3>Titulo 1</h3>
+
+                    <div class="l-excelencia">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                    <div class="descripcion">
+
+                        <p>Medalla 1</p>
+
+                    </div>
+
+                    <h3>Titulo 2</h3>
+
+                    <div class="l-excelencia">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                    <div class="descripcion">
+
+                        <p>Medalla 2</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="titulo">
+
+            <h1>ESG</h1>
+
+        </div>
+
+        <div class="box-esg">
+
+            <div class="parrafo-esg">
+
+                <p>Respondemos al impacto de nuestras acciones y decisiones, siguiendo los más altos estándares de ética y comportamiento, en cumplimiento de las necesidades y expectativas de nuestras partes interesadas.<br>
+                    El alcance de nuestra responsabilidad social abarca la gestión:</p>
+
+            </div>
+
+            <div class="grid-esg">
+
+                <div class="esg esg-top">
+
+                    <div class="img-esg">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                </div>
+
+                <div class="esg esg-bottom">
+
+                    <div class="titulo-esg">
+
+                        <h3>Descargables</h3>
+
+                    </div>
+
+                    <div class="descargables">
+
+                        <div class="descargable">
+
+                            <a href="/Descargables/Examen_Toi.pdf" download> <img src="/Imagenes/Inicio/PDF.webp" width="24px" height="24px"> Comite de responsabilidad social</a>
+
+                        </div>
+
+                        <div class="descargable">
+
+                            <a href="/Descargables/Examen_Toi.pdf" download> <img src="/Imagenes/Inicio/PDF.webp" width="24px" height="24px"> Código de ética</a>
+
+                        </div>
+
+                        <div class="descargable">
+
+                            <a href="/Descargables/Examen_Toi.pdf" download> <img src="/Imagenes/Inicio/PDF.webp" width="24px" height="24px"> Código de conducta</a>
+
+                        </div>
+
+                        <div class="descargable">
+
+                            <a href="/Descargables/Examen_Toi.pdf" download> <img src="/Imagenes/Inicio/PDF.webp" width="24px" height="24px"> >Política de gestión integral</a>
+
+                        </div>
+
+                        <div class="descargable">
+
+                            <a href="/Descargables/Examen_Toi.pdf" download> <img src="/Imagenes/Inicio/PDF.webp" width="24px" height="24px"> Política de sustentabilidad</a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="titulo-footer">
+
+            <h2>Contactanos</h2>
+
+        </div>
+
+        <div class="mensaje">
+
+            <p>Te ofrecemos asesoría personalizada y profesional</p>
+
+        </div>
+
+        <div class="grid-footer1">
+
+            <div class="contacto">
+
+                <div class="grid-footer2">
+
+                    <div class="campos">
+                        <label>Nombre</label>
+                        <input class="input-text" type="text" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="campos">
+                        <label>Correo</label>
+                        <input class="input-text" type="email" placeholder="Tu correo">
+                    </div>
+
+                </div>
+
+                <div class="campos">
+                    <label>Mensaje</label>
+                    <textarea class="input-text"> </textarea>
+                </div>
+
+            </div>
+
+            <div class="contacto redes">
+
+                <div class="red-social">
+
+                    <img src="/Imagenes/Inicio/facebook.webp" alt="" width="40px" height="40px">
+                    <a href="">Grupo CORSEC</a>
+
+                </div>
+
+                <div class="red-social">
+
+
+                    <img src="/Imagenes/Inicio/Twiiter.webp" alt="" width="40px" height="40px">
+                    <a href="">Grupo CORSEC</a>
+
+                </div>
+
+
+                <div class="red-social">
+
+
+                    <img src="/Imagenes/Inicio/instagram.webp" alt="" width="40px" height="40px">
+                    <a href="">Grupo CORSEC</a>
+
+                </div>
+
+
+                <div class="red-social">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                    </svg>
+                    <a href="">55 8854 8383</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+<script src="/JS/mapa.js"> </script>
+
+</html>

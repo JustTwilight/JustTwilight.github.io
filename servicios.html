@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="/CSS/normalize.css">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <script src="/JS/cards.js"></script>
+    <link rel="stylesheet" href="/JS/splide-4.1.3/dist/css/splide.min.css">
+    <script src="/JS/splide-4.1.3/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <title>Grupo-CORSEC</title>
+</head>
+
+<body id="body">
+
+    <header>
+
+        <div class="contenedor">
+
+            <div class="box-logo">
+                <a href="/index.php"><img src="/Imagenes/Logotipo_2023.webp"></a>
+            </div>
+
+            <div class="cambio-idioma">
+                <span class="en">Español</span>
+                <input type="checkbox" class="check servicios">
+                <span class="es">Ingles</span>
+            </div>
+
+            <div class="abrir-menu" id="abrir"><button>Abrir</button></div>
+
+            <div class="nav-principal" id="navegacion">
+
+                <button class="cerrar-menu" id="cerrar">Cerrar</button>
+
+                <div class="box-buscador">
+
+                    <form class="buscador">
+                        <div class="input-box">
+                            <div class="input-contenedor" id="ctn-bars-search">
+                                <input type="text" name="search" class="input-text1" placeholder="&#128269" id="inputsearch" autocomplete="off">
+                                <input type="submit" class="boton" value="Buscar">
+                            </div>
+                            <ul id="box-search">
+                                <li><a href="#"><i></i>Distintivos</a></li>
+                                <li><a href="#"><i></i>Tendencias</a></li>
+                                <li><a href="#"><i></i>Sectores especializados</a></li>
+                                <li><a href="#"><i></i>Excelencia</a></li>
+                                <li><a href="#"><i></i>ESG</a></li>
+                                <li><a href="#"><i></i>Servicios</a></li>
+                                <li><a href="#"><i></i>Contacto</a></li>
+                            </ul>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="box-nav">
+
+                    <nav class="nav">
+
+                        <a href="/index.html">INICIO</a>
+
+                        <a href="/servicios.html">SERVICIOS</a>
+
+                        <a href="/formacion.html">FORMACIÓN</a>
+
+                        <a href="/nosotros.html">NOSOTROS</a>
+
+                        <a href="/contacto.html">CONTACTO</a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <script src="/JS/menu.js"></script>
+    <script src="/JS/hamburguesa.js"></script>
+    <script src="/JS/idiomas/idioma2.js"></script>
+    <script src="/JS/busqueda.js"></script>
+
+    <main class="contenedor-principal">
+
+        <div class="img-optimizacion">
+
+            <div class="titulo-optimizacion">
+
+                <h1>Optimización Empresarial</h1>
+
+            </div>
+
+        </div>
+
+        <div class="box-ventas">
+
+            <div class="grid-ventas">
+
+                <div class="ventas">
+
+                    <div class="titulo" id="incrementar-ventas">
+
+                        <h1>Incrementar ventas</h1>
+
+                    </div>
+
+                    <div class="descripcion-ventas">
+
+                        <p>En nuestra empresa, nos dedicamos a potenciar la capacidad economica de nuestros clientes mediante una amplia gama de estrategias comerciales eficaces. Nuestra gestión se enfoca en lograr un aumento significativo en las ventas de nuestros clientes.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="ventas">
+
+                    <div class="imagen-ventas">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box-costos">
+
+            <div class="grid-costos">
+
+                <div class="costos">
+
+                    <div class="titulo limite">
+
+                        <h1>Reducción de costos y riesgos</h1>
+
+                    </div>
+
+                    <div class="descripcion-costos">
+
+                        <p>Implementamos un sólido Sistema de Gestión Integral que tiene como objetivo mejorar la eficiencia operativa de nuestros clientes. Esto les permite medir, administrar y mejorar la calidad de sus productos y servicios. Nos enfocamos en maximizar la rentabilidad y la satisfacción del cliente en función de sus áreas de especialidad.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="costos">
+
+                    <div class="imagen-costos">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box-gestion">
+
+            <div class="grid-gestion">
+
+                <div class="gestion">
+
+                    <div class="grid-gestion2">
+
+                        <div class="gestion2">
+
+                            <div class="limitacion">
+
+                                <div class="img-gestion">
+
+                                    <img src="/Imagenes/Cuadro.png">
+
+                                </div>
+
+                                <div class="titulo-gestion">
+
+                                    <h1>Titulo</h1>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="gestion2">
+
+                            <div class="limitacion">
+
+                                <div class="img-gestion">
+
+                                    <img src="/Imagenes/Cuadro.png">
+
+                                </div>
+
+                                <div class="titulo-gestion">
+
+                                    <h1>Titulo</h1>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="gestion2">
+
+                            <div class="limitacion">
+
+                                <div class="img-gestion">
+
+                                    <img src="/Imagenes/Cuadro.png">
+
+                                </div>
+
+                                <div class="titulo-gestion">
+
+                                    <h1>Titulo</h1>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="gestion2">
+
+                            <div class="limitacion">
+
+                                <div class="img-gestion">
+
+                                    <img src="/Imagenes/Cuadro.png">
+
+                                </div>
+
+                                <div class="titulo-gestion">
+
+                                    <h1>Titulo</h1>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="gestion2">
+
+                            <div class="limitacion">
+
+                                <div class="img-gestion">
+
+                                    <img src="/Imagenes/Cuadro.png">
+
+                                </div>
+
+                                <div class="titulo-gestion">
+
+                                    <h1>Titulo</h1>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="gestion2">
+
+                            <div class="limitacion">
+
+                                <div class="img-gestion">
+
+                                    <img src="/Imagenes/Cuadro.png">
+
+                                </div>
+
+                                <div class="titulo-gestion">
+
+                                    <h1>Titulo</h1>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="gestion">
+
+                    <div class="titulo">
+
+                        <h1>Sistemas de gestión</h1>
+
+                    </div>
+
+                    <div class="descripcion-gestion">
+
+                        <p>Hemos puesto en marcha un completo Sistema de Gestión Integral con el propósito de elevar la eficiencia operativa de nuestros clientes. Esta solución les permite medir, administrar y mejorar la calidad de sus productos y servicios, enfocándose en la rentabilidad y satisfacción del cliente, adaptándose a las particularidades de cada área de especialidad de la empresa.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box-analitica">
+
+            <div class="titulo">
+
+                <h1>Analítica de negocios</h1>
+
+            </div>
+
+            <div class="descripcion-analitica">
+
+                <p>En la actualidad, tomar decisiones acertadas es de suma importancia para nuestros clientes. Por esta razón, hemos implementado procesos, aplicaciones y tecnologías que facilitan la rápida y sencilla obtención de datos provenientes de los sistemas de gestión, permitiendo su análisis e interpretación.</p>
+
+            </div>
+
+            <div class="grid-analitica">
+
+                <div class="analitica">
+
+                    <div class="analiticas">
+
+                        <h2>Analítica descriptiva</h2>
+
+                        <p>Utilizando los datos disponibles, los convertimos en conocimiento valioso para respaldar la toma de decisiones informadas.</p>
+
+                        <h2>Analítica predictiva</h2>
+
+                        <p>A través de los datos, generamos modelos con el objetivo de anticipar los acontecimientos futuros.</p>
+
+                        <h2>Analítica prescriptiva</h2>
+
+                        <p>Identificamos y analizamos variables clave para maximizar los beneficios del conocimiento derivado de los datos. Nuestros servicios de analítica empresarial ofrecen a nuestros clientes las herramientas necesarias para tomar decisiones estratégicas, basadas en información sólida y precisa. Con nuestra experiencia en análisis de datos, garantizamos un enfoque efectivo y potencializador para el crecimiento y éxito de su empresa.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="analitica">
+
+                    <div class="img-analitica">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box-responsabilidad">
+
+            <div class="titulo">
+
+                <h1>Responsabilidad Social Empresarial</h1>
+
+            </div>
+
+            <div class="responsabilidad">
+
+                <div class="parrafo-responsabilidad">
+
+                    <p>En un mundo cada vez más competitivo, la Responsabilidad Social Corporativa se ha convertido en una respuesta vital al cambio en la forma de hacer negocios. Hemos desarrollado un modelo con un enfoque transversal que abarca aspectos clave, desde la estrategia de la organización hasta la eficiencia operativa, la innovación y la mejora continua.</p>
+
+                </div>
+
+                <div class="grid-responsabilidad">
+
+                    <div class="responsabilidad2">
+
+                        <div class="parrafo-responsabilidad">
+
+                            <p>Nuestro objetivo es proporcionar a nuestros clientes una nueva visión para dirigir sus corporativos, una visión que les permita alcanzar un alto posicionamiento e incrementar su utilidad, teniendo en cuenta todos los factores que impactan tanto dentro como fuera de la empresa. Con nuestra enfoque integral en la Responsabilidad Social Empresarial, buscamos ayudar a nuestros clientes a prosperar en un entorno empresarial desafiante y en constante cambio. </p>
+
+                        </div>
+
+                        <div class="parrafo-responsabilidad centro">
+
+                            <p>Gestión Especializada<br>
+                                Estrategia de Responsabilidad Social Corporativa y Sostenibilidad<br>
+                                Análisis de StakeHolders<br>
+                                Elaboración e implementación de:<br>
+                                Códigos<br>
+                                Políticas<br>
+                                Programas Empresariales
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="responsabilidad2">
+
+                        <div class="img-responsabilidad">
+
+                            <img src="/Imagenes/Cuadro.png">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box-politica">
+
+            <div class="grid-politica">
+
+                <div class="politica">
+
+                    <div class="img-politica">
+
+                        <img src="/Imagenes/Cuadro.png" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="politica">
+
+                    <div class="parrafo-politica">
+
+                        <p>Nuestra Política de Responsabilidad Social Corporativa En línea con nuestra dedicación a la Responsabilidad Social, nos comprometemos a seguir los principios y directrices establecidos en la Norma ISO 26000 y los diez principios del Pacto Mundial de las Naciones Unidas.Nuestra empresa se esfuerza en cumplir con todas las leyes nacionales e internacionales pertinentes, siempre buscando mejorar nuestro Sistema de Gestión de Responsabilidad Social de manera continua. Esta política tiene como objetivo unir las dimensiones social, económica y ambiental a los principios, valores, códigos y procesos de nuestra compañía, para generar valor compartido. Si desea conocer más, puede acceder a la versión completa de nuestra Política de Responsabilidad Social Corporativa en info@corsec.com.mx. empresarial desafiante y en constante cambio. </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box-certificaciones">
+
+            <div class="titulo">
+
+                <h1>Certificaciones, Postulaciones y Distintivos</h1>
+
+            </div>
+
+            <div class="grid-certificaciones">
+
+                <div class="certificacion">
+
+                    <div class="titulo-certificacion">
+
+                        <h2>ISO 26000</h2>
+
+                    </div>
+
+                    <div class="parrafo-certificacion">
+
+                        <p>Sistema de Gestión de Responsabilidad Corporativa ISO 26000. La Norma ISO 26000 es el estándar de cumplimiento internacional con el alcance mas amplio en la gestión de la empresa en materia de Responsabilidad Social Corporativa. No es certificable. Una estrategia apalancada de la Norma ISO 26000 le permitirá a la empresa dar cumplimiento al impacto que genera en sus colaboradores, socios y accionistas, clientes, comunidad, gobierno, proveedores y medio ambiente.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="imagen-certificacion">
+
+                        <img src="/Imagenes/Cuadro.png" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="titulo-certificacion">
+
+                        <h2>IQNeT RS10</h2>
+
+                    </div>
+
+                    <div class="parrafo-certificacion">
+
+                        <p>La implementación de esta Norma Internacional está dirigida a clientes que buscan una estrategia de negocios con una visión global, desde su gobierno corporativo, hasta la gestión de sus procesos y sus políticas, evaluando a través de diversos indicadores la rentabilidad de la estrategia y los beneficios económicos.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="imagen-certificacion">
+
+                        <img src="/Imagenes/Cuadro.png" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="titulo-certificacion">
+
+                        <h2>IPC Sustentable de la Bolsa Mexicana de Valores</h2>
+
+                    </div>
+
+                    <div class="parrafo-certificacion">
+
+                        <p>La incorporación al IPC Sustentable fortalece la reputación de la marca y muestra en el mercado, que además de contar con una economía sólida, es más factible que la compañía permanezca en el tiempo adaptándose más fácilmente a las nuevas políticas y circunstancias de una sociedad en constante evolución, presentándose entonces como una excelente opción para la inversión a futuro.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="imagen-certificacion">
+
+                        <img src="/Imagenes/Cuadro.png" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="titulo-certificacion">
+
+                        <h2>Norma SA8000 Social Accountability International Seguridad y Salud Laboral</h2>
+
+                    </div>
+
+                    <div class="parrafo-certificacion">
+
+                        <p>La incorporación al IPC Sustentable fortalece la reputación de la marca y muestra en el mercado, que además de contar con una economía sólida, es más factible que la compañía permanezca en el tiempo adaptándose más fácilmente a las nuevas políticas y circunstancias de una sociedad en constante evolución, presentándose entonces como una excelente opción para la inversión a futuro.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="imagen-certificacion">
+
+                        <img src="/Imagenes/Cuadro.png" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="titulo-certificacion">
+
+                        <h2>Adhesión al Pacto Mundial de las Naciones Unidas</h2>
+
+                    </div>
+
+                    <div class="parrafo-certificacion">
+
+                        <p>GRUPO CORSEC implementa un modelo estratégico con el objetivo de alinear los objetivos del Desarrollo Sostenible a la estrategia de la empresa.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="imagen-certificacion">
+
+                        <img src="/Imagenes/Cuadro.png" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box-fortalecimiento">
+
+            <div class="titulo">
+
+                <h1>Fortalecimiento institucional</h1>
+
+            </div>
+
+            <div class="fortalecimiento">
+
+                <div class="parrafo-fortalecimiento chico">
+
+                    <p>Buscando fortalecer su perspectiva de desarrollo, crecimiento y evolución a lo largo del tiempo, profesionalizamos la gestión comercial, administrativa y operativa de nuestros clientes.</p>
+
+                </div>
+
+                <div class="grid-fortalecimiento">
+
+                    <div class="fortalecimiento2">
+
+                        <div class="img-fortalecimiento">
+
+                            <img src="/Imagenes/Cuadro.png" alt="">
+
+                        </div>
+
+                    </div>
+
+                    <div class="fortalecimiento2">
+
+                        <div class="titulo-fortalecimiento">
+
+                            <h2>Profesionalización de Pymes</h2>
+
+                        </div>
+
+                        <div class="parrafo-fortalecimiento separacion">
+
+                            <p>Plan de Negocios<br>
+                                Estructura de la Estrategía<br>
+                                Análisis Integral para Identificar Oportunidades de Eficiencia, Rentabilidad y Productividad<br>
+                                Innovación<br>
+                                Reducción de Costos e Incremento de ventas<br>
+                                Control de mermas e inventarios<br>
+                                Profesionalización de OSC<br>
+                                Programas y Campañas de Fondeo<br>
+                                Estructura de Operación<br>
+                                Procesos<br>
+                                Políticas y Programas
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box-desarrollo">
+
+            <div class="titulo">
+
+                <h1>Desarrollo</h1>
+
+            </div>
+
+            <div class="grid-desarrollo">
+
+                <div class="desarrollo">
+
+                    <div class="parrafo-desarrollo">
+
+                        <p>En nuestra empresa, brindamos soluciones integrales de innovación digital para tu compañía. Contamos con una amplia gama de proyectos digitales enfocados en lograr resultados excepcionales mediante la implementación de mejoras continuas y prácticas que optimizan la experiencia del usuario.</p>
+
+                    </div>
+
+                    <div class="parrafo-desarrollo lista">
+
+                        <p>eCommerce<br>
+                            Web Apps<br>
+                            Sistemas Administrables<br>
+                            Bases de Datos<br>
+                            Aplicaciones móviles (Android)<br>
+                            Diseño Web<br>
+                            Asesoría en Hosting y registro de dominios<br>
+                            Posicionamiento en SEO (Search Engine Optimization) / SEM (Seach Engine Marketing)<br>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="desarrollo">
+
+                    <div class="img-desarrollo">
+
+                        <img src="/Imagenes/Cuadro.png" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box-red">
+
+            <div class="box-red2">
+
+                <div class="titulo-red">
+
+                    <h1>Redes</h1>
+
+                </div>
+
+                <div class="parrafo-red">
+
+                    <p>Somos plenamente conscientes de la importancia de los Centros de Procesamiento de Datos (CPD) en las empresas, ya que son el corazón donde se concentran los recursos necesarios para el procesamiento de la información de una organización. Por esta razón, hemos creado una oferta tecnológica de vanguardia para satisfacer los requerimientos específicos de los centros de datos de nuestros clientes. Nuestro equipo cuenta con personal altamente calificado y especializado en el diseño e implementación de equipamiento en centros de datos, destacándonos en las siguientes aplicaciones:</p>
+
+                </div>
+
+                <div class="grid-red">
+
+                    <div class="red2">
+
+                        <div class="parrafo-red">
+
+                            <p>Switching y ruteo<br>
+                                Consolas de Red<br>
+                                Seguridad<br>
+                                Servidores<br>
+                                Administración y monitoreo<br>
+                                Cableado estructurado<br>
+                                Video vigilancia<br>
+                                Energía<br>
+                                Montaje y aseguramiento
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="red">
+
+                        <div class="img-red">
+
+                            <img src="/Imagenes/Cuadro.png" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="parrafo-red">
+
+                    <p>En Grupo CORSEC, ofrecemos una solución completa en tecnología inalámbrica para la transmisión de datos de alta velocidad, especialmente diseñada para equipos de alto rendimiento y usuarios móviles. Nuestros servicios también abarcan la conexión a estaciones de trabajo, proporcionando una gran flexibilidad de aplicaciones adaptadas a las necesidades de todo tipo de empresas e instituciones. Contamos con un equipo de profesionales altamente calificados y con amplia experiencia en el diseño e implementación de diversas soluciones en redes inalámbricas. Estamos preparados para proporcionar el mejor soporte y asesoramiento para optimizar la conectividad y el rendimiento de su infraestructura inalámbrica.</p>
+
+                </div>
+
+                <div class="grid-red">
+
+                    <div class="red2">
+
+                        <div class="img-red">
+
+                            <img src="/Imagenes/Cuadro.png" alt="">
+
+                        </div>
+
+                    </div>
+
+                    <div class="red">
+
+                        <div class="parrafo-red centro">
+
+                            <p>Área local (WLAN)<br>
+                                Metropolitanas (WMAN)<br>
+                                Punto a punto (PtP)<br>
+                                Punto a multipunto (PtM)<br>
+                                En malla (Mesh)
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box-seguridad">
+
+            <div class="box-seguridad2">
+
+                <div class="titulo-seguridad">
+
+                    <h1>Servicios de Seguridad y Soporte Técnico</h1>
+
+                </div>
+
+                <div class="parrafo-seguridad">
+
+                    <p>Nuestro equipo de especialistas está listo para brindarte asistencia técnica en sistemas Microsoft, Mac y Linux. Adicionalmente, transformamos tu empresa mediante soluciones de Infraestructura, Servicios y Ciberseguridad, respaldados por profesionales altamente calificados y reconocidos en diferentes sectores industriales.</p>
+
+                </div>
+
+                <div class="grid-seguridad">
+
+                    <div class="seguridad">
+
+                        <div class="parrafo-seguridad">
+
+                            <p>Mantenimiento y soporte técnico especializado en sitio o remoto.<br>
+                               Recuperación de Datos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="seguridad">
+
+                        <div class="img-seguridad">
+
+                            <img src="/Imagenes/Cuadro.png" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="titulo-footer">
+
+            <h2>Contactanos</h2>
+
+        </div>
+
+        <div class="mensaje">
+
+            <p>Te ofrecemos asesoría personalizada y profesional</p>
+
+        </div>
+
+        <div class="grid-footer1">
+
+            <div class="contacto">
+
+                <div class="grid-footer2">
+
+                    <div class="campos">
+                        <label>Nombre</label>
+                        <input class="input-text" type="text" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="campos">
+                        <label>Correo</label>
+                        <input class="input-text" type="email" placeholder="Tu correo">
+                    </div>
+
+                </div>
+
+                <div class="campos">
+                    <label>Mensaje</label>
+                    <textarea class="input-text"> </textarea>
+                </div>
+
+            </div>
+
+            <div class="contacto redes">
+
+                <div class="red-social">
+
+                    <img src="/Imagenes/Inicio/facebook.webp" alt="" width="40px" height="40px">
+                    <a href="">Grupo CORSEC</a>
+
+                </div>
+
+                <div class="red-social">
+
+
+                    <img src="/Imagenes/Inicio/Twiiter.webp" alt="" width="40px" height="40px">
+                    <a href="">Grupo CORSEC</a>
+
+                </div>
+
+
+                <div class="red-social">
+
+
+                    <img src="/Imagenes/Inicio/instagram.webp" alt="" width="40px" height="40px">
+                    <a href="">Grupo CORSEC</a>
+
+                </div>
+
+
+                <div class="red-social">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                    </svg>
+                    <a href="">55 8854 8383</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

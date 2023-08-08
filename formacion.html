@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="/CSS/normalize.css">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <script src="/JS/cards.js"></script>
+    <link rel="stylesheet" href="/JS/splide-4.1.3/dist/css/splide.min.css">
+    <script src="/JS/splide-4.1.3/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <title>Grupo-CORSEC</title>
+</head>
+
+<body id="body">
+
+    <header>
+
+        <div class="contenedor">
+
+            <div class="box-logo">
+                <a href="/index.php"><img src="/Imagenes/Logotipo_2023.webp"></a>
+            </div>
+
+            <div class="cambio-idioma">
+                <span class="en">Español</span>
+                <input type="checkbox" class="check formacion">
+                <span class="es">Ingles</span>
+            </div>
+
+            <div class="abrir-menu" id="abrir"><button>Abrir</button></div>
+
+            <div class="nav-principal" id="navegacion">
+
+                <button class="cerrar-menu" id="cerrar">Cerrar</button>
+
+                <div class="box-buscador">
+
+                    <form class="buscador">
+                        <div class="input-box">
+                            <div class="input-contenedor" id="ctn-bars-search">
+                                <input type="text" name="search" class="input-text1" placeholder="&#128269" id="inputsearch" autocomplete="off">
+                                <input type="submit" class="boton" value="Buscar">
+                            </div>
+                            <ul id="box-search">
+                                <li><a href="#"><i></i>Distintivos</a></li>
+                                <li><a href="#"><i></i>Tendencias</a></li>
+                                <li><a href="#"><i></i>Sectores especializados</a></li>
+                                <li><a href="#"><i></i>Excelencia</a></li>
+                                <li><a href="#"><i></i>ESG</a></li>
+                                <li><a href="#"><i></i>Servicios</a></li>
+                                <li><a href="#"><i></i>Contacto</a></li>
+                            </ul>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="box-nav">
+
+                    <nav class="nav">
+
+                        <a href="/index.html">INICIO</a>
+
+                        <a href="/servicios.html">SERVICIOS</a>
+
+                        <a href="/formacion.html">FORMACIÓN</a>
+
+                        <a href="/nosotros.html">NOSOTROS</a>
+
+                        <a href="/contacto.html">CONTACTO</a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <script src="/JS/menu.js"></script>
+    <script src="/JS/hamburguesa.js"></script>
+    <script src="/JS/idiomas/idioma3.js"></script>
+    <script src="/JS/busqueda.js"></script>
+
+    <main class="contenedor-principal">
+
+        <div class="img-formacion">
+
+            <div class="titulo-formacion">
+
+                <h1>Formación y capacitación</h1>
+
+            </div>
+
+        </div>
+
+        <div class="box-formacion">
+
+            <div class="grid-formacion">
+
+                <div class="parrafo-formacion">
+
+                    <p>Descubre nuestra amplia oferta de talleres y cursos especializados en áreas fundamentales para cualquier empresa que aspire a mantener altos estándares y superar las expectativas de sus clientes. Nuestros programas abarcan Gestión de Calidad, Responsabilidad Social Corporativa, Sistemas Integrados, Comercial, Responsabilidad Social e Inocuidad. Estos cursos dotarán a los participantes con conocimientos esenciales para asegurar la excelencia en la producción y servicios, brindándoles las herramientas necesarias para mejorar continuamente la calidad de sus productos y servicios. Nuestro enfoque centrado en la excelencia preparará a nuestros estudiantes para enfrentar los retos del mercado actual y destacar en la satisfacción del cliente.</p>
+
+                </div>
+
+                <div class="imagen-formacion">
+
+                    <img src="/Imagenes/Cuadro.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="titulos-formacion">
+
+            <h1>CURSOS</h1>
+
+        </div>
+
+        <div class="box-cursos">
+
+            <div class="grid-cursos">
+
+                <div class="cursos diferencia1">
+
+                    <div class="titulo-cursos3 oscuro">
+
+                        <h3>Curso</h3>
+
+                    </div>
+
+                    <div class="parrafo-cursos">
+
+                        <p>Requisitos de la Norma ISO 9001:2015</p>
+                        <p>Estructura e Implementación de la Norma ISO 9001:2015</p>
+                        <p>Auditorías Internas ISO 9001:2015</p>
+                        <p>Formación Auditor Líder ISO 9001:2015</p>
+                        <p>Optimización de Procesos Transaccionales</p>
+                        <p>Herramientas Básicas de Calidad</p>
+                        <p>Herramientas Básicas de Procesos</p>
+                        <p>Análisis de Problemas y Toma de Decisiones</p>
+                        <p>KAIZEN</p>
+                        <p>Estadística para la Toma de Decisiones</p>
+                        <p>Control Estadístico del Proceso</p>
+                        <p>Diseño de Experimentos</p>
+                        <p>Mapeo y Rediseño de Procesos</p>
+                        <p>Pensamiento Esbelto</p>
+                        <p>Administración por Procesos</p>
+                        <p>8 disciplinas</p>
+                        <p>Gestión de Proyectos</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia2">
+
+                    <div class="titulo-cursos3 claro">
+
+                        <h3>Area</h3>
+
+                    </div>
+
+                    <div class="parrafo-cursos centrado">
+
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+                        <p>Calidad</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia1">
+
+                    <div class="titulo-cursos3 oscuro">
+
+                        <h3>Duración</h3>
+
+                    </div>
+
+                    <div class="parrafo-cursos centrado">
+
+                        <p>16 hrs</p>
+                        <p>24 hrs</p>
+                        <p>16 hrs</p>
+                        <p>24 hrs</p>
+                        <p>40 hrs</p>
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+                        <p>40 hrs</p>
+                        <p>40 hrs</p>
+                        <p>24 hrs</p>
+                        <p>40 hrs</p>
+                        <p>24 hrs</p>
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia2">
+
+                    <div class="parrafo-cursos">
+
+                        <p>Responsabilidad Social como Estrategia del Negocio</p>
+                        <p>Profesionalización de la Responsabilidad Social</p>
+                        <p>Simulación de Procesos</p>
+                        <p>Emprendedurismo Social</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia1">
+
+                    <div class="parrafo-cursos  centrado">
+
+                        <p>Responsabilidad Social</p>
+                        <p>Responsabilidad Social</p>
+                        <p>Responsabilidad Social</p>
+                        <p>Responsabilidad Social</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia2">
+
+                    <div class="parrafo-cursos centrado">
+
+                        <p>8 hrs</p>
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia1">
+
+                    <div class="parrafo-cursos">
+
+                        <p>Análisis de Peligros y Puntos Críticos de Control</p>
+                        <p>Implementación de Programas Prerrequisito</p>
+                        <p>Estructura e Implementación de la Norma ISO 22001</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia2">
+
+                    <div class="parrafo-cursos centrado">
+
+                        <p>Inocuidad</p>
+                        <p>Inocuidad</p>
+                        <p>Inocuidad</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia1">
+
+                    <div class="parrafo-cursos centrado">
+
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia2">
+
+                    <div class="parrafo-cursos">
+
+                        <p>Herramientas de Liderazgo para un Alto Desempeño</p>
+                        <p>Gestión de Proyectos</p>
+                        <p>Desarrollo de Habilidades del Pensamiento</p>
+                        <p>Negociación Efectiva</p>
+                        <p>Balanced Score Card</p>
+                        <p>Blue Ocean Strategy</p>
+                        <p>Inteligencia Emocional en la Organización</p>
+                        <p>Construcción de Equipos de Trabajo (Team Building)</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia1">
+
+                    <div class="parrafo-cursos centrado">
+
+                        <p>Liderazgo</p>
+                        <p>Liderazgo</p>
+                        <p>Liderazgo</p>
+                        <p>Liderazgo</p>
+                        <p>Liderazgo</p>
+                        <p>Liderazgo</p>
+                        <p>Liderazgo</p>
+                        <p>Liderazgo</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia2">
+
+                    <div class="parrafo-cursos centrado">
+
+                        <p>8 hrs</p>
+                        <p>8 hrs</p>
+                        <p>8 hrs</p>
+                        <p>8 hrs</p>
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+                        <p>16 hrs</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia1">
+
+                    <div class="parrafo-cursos">
+
+                        <p>Integración de los Sistemas Calidad-Ambiental-Seguridad</p>
+                        <p>Auditoría Interna de Sistemas Integrados Calidad-Ambiental-Seguridad</p>
+                        <p>Auditor Líder de Sistemas Integrados Calidad-Ambiental-Seguridad</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia2">
+
+                    <div class="parrafo-cursos centrado">
+
+                        <p>Sistemas integrados</p>
+                        <p>Sistemas integrados</p>
+                        <p>Sistemas integrados</p>
+
+                    </div>
+
+                </div>
+
+                <div class="cursos diferencia1">
+
+                    <div class="parrafo-cursos centrado">
+
+                        <p>24 hrs</p>
+                        <p>40 hrs</p>
+                        <p>40 hrs</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="titulos-formacion">
+
+            <h1>TALLERES</h1>
+
+        </div>
+
+        <div class="box-talleres">
+
+            <div class="grid-talleres">
+
+                <div class="talleres diferencia1">
+
+                    <div class="titulo-taller oscuro">
+
+                        <h3>Taller</h3>
+
+                    </div>
+
+                    <div class="parrafo-taller">
+
+                        <p>Estrategias del Área Comercial</p>
+                        <p>Estructura de la Fuerza de Ventas</p>
+                        <p>Procesos Relacionados con el Cliente</p>
+                        <p>Competencias de la Fuerza de Ventas</p>
+                        <p>Estructura de Compensaciones</p>
+
+                    </div>
+
+                </div>
+
+                <div class="talleres diferencia2">
+
+                    <div class="titulo-taller claro">
+
+                        <h3>Área</h3>
+
+                    </div>
+
+                    <div class="parrafo-taller centrado">
+
+                        <p>Comercial</p>
+                        <p>Comercial</p>
+                        <p>Comercial</p>
+                        <p>Comercial</p>
+                        <p>Comercial</p>
+
+                    </div>
+
+                </div>
+
+                <div class="talleres diferencia1">
+
+                    <div class="titulo-taller oscuro">
+
+                        <h3>Duración</h3>
+
+                    </div>
+
+                    <div class="parrafo-taller centrado">
+
+                        <p>16 hrs</p>
+                        <p>24 hrs</p>
+                        <p>16 hrs</p>
+                        <p>24 hrs</p>
+                        <p>8 hrs</p>
+
+                    </div>
+
+                </div>
+
+                <div class="talleres diferencia2">
+
+                    <div class="parrafo-taller">
+
+                        <p>Diagnósticos Comunitarios</p>
+                        <p>Marco Lógico para Proyectos Sociales</p>
+
+                    </div>
+
+                </div>
+
+                <div class="talleres diferencia1">
+
+                    <div class="parrafo-taller centrado">
+
+                        <p>Responsabilidad Social</p>
+                        <p>Responsabilidad Social</p>
+
+                    </div>
+
+                </div>
+
+                <div class="talleres diferencia2">
+
+                    <div class="parrafo-taller centrado">
+
+                        <p>24 hrs</p>
+                        <p>16 hrs</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="titulos-formacion">
+
+            <h1>CERTIFICACIONES</h1>
+
+        </div>
+
+        <div class="box-certificaciones">
+
+            <div class="grid-certificaciones">
+
+                <div class="certificacion">
+
+                    <div class="info">
+
+                        <div class="titulo-certificacion">
+
+                            <h2>MASTER BLACK BELT (MBB)</h2>
+
+                        </div>
+
+                        <div class="parrafo-certificacion">
+
+                            <div class="negrita">
+
+                                <p>Descripción:</p>
+
+                            </div>
+
+                            <p>Experto técnico y en la metodología, forma y asesora a BB y GB. Nivel staff de Dirección.</p>
+
+                            <div class="negrita">
+
+                                <p>Certificación:</p>
+
+                            </div>
+
+                            <p>BB + Entrenamiento como MBB + 2 Proyectos de 500K USD c/u + 10 BB certificados.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="img-certificacion">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="info">
+
+                        <div class="titulo-certificacion">
+
+                            <h2>BLACK BELT (BB)</h2>
+
+                        </div>
+
+                        <div class="parrafo-certificacion">
+
+                            <div class="negrita">
+
+                                <p>Descripción:</p>
+
+                            </div>
+
+                            <p>100 % del tiempo desarrollando proyectos LSS.</p>
+
+                            <div class="negrita">
+
+                                <p>Certificación:</p>
+
+                            </div>
+
+                            <p>GB + Entrenamiento como BB + 2 Proyectos de 100K USD c/u.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="img-certificacion">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="info">
+
+                        <div class="titulo-certificacion">
+
+                            <h2>GREEN BELT (GB)</h2>
+
+                        </div>
+
+                        <div class="parrafo-certificacion">
+
+                            <div class="negrita">
+
+                                <p>Descripción:</p>
+
+                            </div>
+
+                            <p>Parte de su tiempo desarrollando proyectos LSS básicamente dentro de su área de trabajo o de manera cros-funcional.</p>
+
+                            <div class="negrita">
+
+                                <p>Certificación:</p>
+
+                            </div>
+
+                            <p>Entrenamiento como GB + 1 Proyecto de al menos 25K USD de ahorro.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="img-certificacion">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                </div>
+
+                <div class="certificacion">
+
+                    <div class="info">
+
+                        <div class="titulo-certificacion">
+
+                            <h2>YELLOW BELT (YB)</h2>
+
+                        </div>
+
+                        <div class="parrafo-certificacion">
+
+                            <div class="negrita">
+
+                                <p>Descripción:</p>
+
+                            </div>
+
+                            <p>Desarrolla proyectos de mejora con herramientas básicas principalmente dentro de su área de trabajo.</p>
+
+                            <div class="negrita">
+
+                                <p>Certificación:</p>
+
+                            </div>
+
+                            <p>Entrenamiento como YB más un proyecto de 5K USD de ahorro.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="img-certificacion">
+
+                        <img src="/Imagenes/Cuadro.png">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="titulo-footer">
+
+            <h2>Contactanos</h2>
+
+        </div>
+
+        <div class="mensaje">
+
+            <p>Te ofrecemos asesoría personalizada y profesional</p>
+
+        </div>
+
+        <div class="grid-footer1">
+
+            <div class="contacto">
+
+                <div class="grid-footer2">
+
+                    <div class="campos">
+                        <label>Nombre</label>
+                        <input class="input-text" type="text" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="campos">
+                        <label>Correo</label>
+                        <input class="input-text" type="email" placeholder="Tu correo">
+                    </div>
+
+                </div>
+
+                <div class="campos">
+                    <label>Mensaje</label>
+                    <textarea class="input-text"> </textarea>
+                </div>
+
+            </div>
+
+            <div class="contacto redes">
+
+                <div class="red-social">
+
+                    <img src="/Imagenes/Inicio/facebook.webp" alt="" width="40px" height="40px">
+                    <a href="">Grupo CORSEC</a>
+
+                </div>
+
+                <div class="red-social">
+
+
+                    <img src="/Imagenes/Inicio/Twiiter.webp" alt="" width="40px" height="40px">
+                    <a href="">Grupo CORSEC</a>
+
+                </div>
+
+
+                <div class="red-social">
+
+
+                    <img src="/Imagenes/Inicio/instagram.webp" alt="" width="40px" height="40px">
+                    <a href="">Grupo CORSEC</a>
+
+                </div>
+
+
+                <div class="red-social">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                    </svg>
+                    <a href="">55 8854 8383</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+<script src="/JS/mapa.js"> </script>
+
+</html>
