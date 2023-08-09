@@ -18,14 +18,14 @@ L.marker([19.36477191977165, -99.26678598802302]).addTo(map)
 (function () {
     "use strict";
     document.addEventListener('DOMContentLoaded', function () {
-        var map2 = L.map('mapa2').setView([19.613282869328355, -99.33934790261024], 17);
+        var map2 = L.map('mapa2').setView([19.080865716905823, -104.28852176907041], 17);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map2);
 
-        L.marker([19.613282869328355, -99.33934790261024]).addTo(map2)
-            .bindPopup('Territorio Dragon2.<br> UTFV.')
+        L.marker([19.080865716905823, -104.28852176907041]).addTo(map2)
+            .bindPopup('Grupo CORSEC.<br> Manzanillo.')
             .openPopup();
     });
 })();
@@ -34,30 +34,30 @@ L.marker([19.36477191977165, -99.26678598802302]).addTo(map)
 (function () {
     "use strict";
     document.addEventListener('DOMContentLoaded', function () {
-        var map3 = L.map('mapa3').setView([19.613282869328355, -99.33934790261024], 17);
+        var map3 = L.map('mapa3').setView([25.644029605292644, -100.35342281988957], 17);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map3);
 
-        L.marker([19.613282869328355, -99.33934790261024]).addTo(map3)
-            .bindPopup('Territorio Dragon3.<br> UTFV.')
+        L.marker([25.644029605292644, -100.35342281988957]).addTo(map3)
+            .bindPopup('Grupo CORSEC.<br> Monterrey.')
             .openPopup();
     });
 })();
 
-//Mapa 3
+//Mapa 4
 (function () {
     "use strict";
     document.addEventListener('DOMContentLoaded', function () {
-        var map4 = L.map('mapa4').setView([19.613282869328355, -99.33934790261024], 17);
+        var map4 = L.map('mapa4').setView([19.02844438210098, -98.23689129123645], 17);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map4);
 
-        L.marker([19.613282869328355, -99.33934790261024]).addTo(map4)
-            .bindPopup('Territorio Dragon4.<br> UTFV.')
+        L.marker([19.02844438210098, -98.23689129123645]).addTo(map4)
+            .bindPopup('Grupo CORSEC.<br> Puebla.')
             .openPopup();
     });
 })();
