@@ -1479,17 +1479,23 @@ footer {
     color: white;
 }
 
-.grid-cursos{
-    display: grid;
-    /*grid-template-columns: 70% 30%;*/
-    grid-template-columns: repeat(3, 1fr);
-    width: 70%;
+.tabla-cursos{
+    width: 80%;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
-.cursos{
+.box-cursos table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.tabla-cursos th,td{
     border: 1px solid black;
+    width: calc(100% / 3);
+}
+
+.c-tabla td{
+    padding: 5px;
 }
 
 .titulo-cursos3 {
@@ -1514,29 +1520,7 @@ footer {
 
 .diferencia2{
     background-color: rgba(16, 16, 16, .3); 
-}
-
-.diferencia2 p{
     font-weight: bold;
-}
-
-.alinear {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.parrafo-cursos {
-    width: 90%;
-    line-height: 1.5rem;
-    margin: 0 auto;
-}
-
-.parrafo-cursos p {
-    height: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .centrado {
@@ -1547,25 +1531,23 @@ footer {
 
 /*Estilos zona talleres*/
 
-.grid-talleres {
-    display: grid;
-    /*grid-template-columns: 70% 30%;*/
-    grid-template-columns: repeat(3, 1fr);
-    width: 70%;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-
-.titulo-taller{
-    font-size: 15px;
-    text-align: center;
-    width: 100%;
-}
-
-.parrafo-taller {
+.tabla-talleres{
     width: 80%;
-    line-height: 1.5rem;
     margin: 0 auto;
+}
+
+.box-talleres table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.tabla-talleres th,td{
+    border: 1px solid black;
+    width: calc(100% / 3);
+}
+
+.t-tabla td{
+    padding: 5px;
 }
 
 /*Terminan estilos zona talleres*/
