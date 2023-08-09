@@ -1893,38 +1893,12 @@ footer {
     margin: 15px auto;
 }
 
-.mp-contacto{
-    position: relative;
-}
-
-.ub-contacto {
-    position: absolute;
-    z-index: 9999;
-    margin-top: 15px;
-    margin-left: 40px;
-    width: 25%;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.ub-contacto p{
-    color: white;
-}
-
 /*Terminan estilos zona plugins*/
-
-/*Terminan estilos pagina contacto*/
 
 .box-mapas {
     width: 100%;
     margin-top: 10px;
     overflow: hidden;
-}
-
-.grid-mapas {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-gap: 1.5rem;
 }
 
 .mapas {
@@ -1937,11 +1911,10 @@ footer {
     height: 100%;
 }
 
-.ubicaciones {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-
+.ubicacion p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px;
 }
 
 .lugar {
@@ -1961,10 +1934,30 @@ footer {
     transition: opacity 0.3s;
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0 auto;
 }
 
 .lugar a:hover {
     background-color: #c2bcbc;
 }
+
+.mp-contacto{
+    position: relative;
+}
+
+.ub-contacto {
+    position: absolute;
+    z-index: 9999;
+    margin-top: 15px;
+    margin-left: 45px;
+    width: 25%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ub-contacto p{
+    color: white;
+}
+
+/*Terminan estilos pagina contacto*/
